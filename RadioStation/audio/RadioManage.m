@@ -27,11 +27,17 @@
         //initialization
         
         self.radioURL = @"http://radioplayer.kissfmuk.com/live/"; // << set here the default radio
-        [self setURL];
+        
     }
     return self;
 }
 
+
+-(void) setRadioURL:(NSString *)radioURL
+{
+    _radioURL = radioURL;
+    [self setURL];
+}
 
 -(void)setURL
 {
@@ -43,8 +49,7 @@
 -(void) setPlayingURL: (NSString *)radioURL
 {
     self.radioURL = radioURL;
-    [self setURL];
-    [self setAudioPlayer];
+        [self setAudioPlayer];
 
 }
 
