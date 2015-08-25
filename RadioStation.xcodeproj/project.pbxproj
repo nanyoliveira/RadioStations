@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		459A6B9FA4284BAF7EF3F4D5 /* libPods-RadioStation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 349D9B412EE2F75C5C76D58B /* libPods-RadioStation.a */; };
+		F63EAC4C1B8C9E34004779B8 /* RadioManage.m in Sources */ = {isa = PBXBuildFile; fileRef = F63EAC4B1B8C9E34004779B8 /* RadioManage.m */; };
+		F63EAC4E1B8CA051004779B8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63EAC4D1B8CA051004779B8 /* AVFoundation.framework */; };
 		F6E654081B860913002D3D7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E654071B860913002D3D7A /* main.m */; };
 		F6E6540B1B860913002D3D7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E6540A1B860913002D3D7A /* AppDelegate.m */; };
 		F6E6540E1B860913002D3D7A /* RadioStation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6E6540C1B860913002D3D7A /* RadioStation.xcdatamodeld */; };
@@ -28,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		349D9B412EE2F75C5C76D58B /* libPods-RadioStation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RadioStation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D27CD3D15E2B03C64956227 /* Pods-RadioStation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioStation.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadioStation/Pods-RadioStation.release.xcconfig"; sourceTree = "<group>"; };
+		B1F8D99A8224B8C3467085D4 /* Pods-RadioStation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioStation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadioStation/Pods-RadioStation.debug.xcconfig"; sourceTree = "<group>"; };
+		F63EAC4A1B8C9E34004779B8 /* RadioManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RadioManage.h; path = audio/RadioManage.h; sourceTree = "<group>"; };
+		F63EAC4B1B8C9E34004779B8 /* RadioManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RadioManage.m; path = audio/RadioManage.m; sourceTree = "<group>"; };
+		F63EAC4D1B8CA051004779B8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F6E654021B860913002D3D7A /* RadioStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E654061B860913002D3D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6E654071B860913002D3D7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63EAC4E1B8CA051004779B8 /* AVFoundation.framework in Frameworks */,
+				459A6B9FA4284BAF7EF3F4D5 /* libPods-RadioStation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,11 +73,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F665B58C1B865FF600B68E01 /* model */ = {
+		7DAA013F9C14812A0C47CBF3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				B1F8D99A8224B8C3467085D4 /* Pods-RadioStation.debug.xcconfig */,
+				7D27CD3D15E2B03C64956227 /* Pods-RadioStation.release.xcconfig */,
 			);
-			name = model;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94C4C526169A83AA36332973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F63EAC4D1B8CA051004779B8 /* AVFoundation.framework */,
+				349D9B412EE2F75C5C76D58B /* libPods-RadioStation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F665B58C1B865FF600B68E01 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				F63EAC4A1B8C9E34004779B8 /* RadioManage.h */,
+				F63EAC4B1B8C9E34004779B8 /* RadioManage.m */,
+			);
+			name = audio;
 			sourceTree = "<group>";
 		};
 		F6E653F91B860913002D3D7A = {
@@ -75,6 +106,8 @@
 				F6E654041B860913002D3D7A /* RadioStation */,
 				F6E654211B860913002D3D7A /* RadioStationTests */,
 				F6E654031B860913002D3D7A /* Products */,
+				7DAA013F9C14812A0C47CBF3 /* Pods */,
+				94C4C526169A83AA36332973 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,7 +123,7 @@
 		F6E654041B860913002D3D7A /* RadioStation */ = {
 			isa = PBXGroup;
 			children = (
-				F665B58C1B865FF600B68E01 /* model */,
+				F665B58C1B865FF600B68E01 /* audio */,
 				F6E654091B860913002D3D7A /* AppDelegate.h */,
 				F6E6540A1B860913002D3D7A /* AppDelegate.m */,
 				F6E6540F1B860913002D3D7A /* ViewController.h */,
@@ -137,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6E654281B860913002D3D7A /* Build configuration list for PBXNativeTarget "RadioStation" */;
 			buildPhases = (
+				35A7E6BA67173595A96479C5 /* Check Pods Manifest.lock */,
 				F6E653FE1B860913002D3D7A /* Sources */,
 				F6E653FF1B860913002D3D7A /* Frameworks */,
 				F6E654001B860913002D3D7A /* Resources */,
+				8879A52221FDA4565DD09FEE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,6 +260,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35A7E6BA67173595A96479C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8879A52221FDA4565DD09FEE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioStation/Pods-RadioStation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6E653FE1B860913002D3D7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -233,6 +301,7 @@
 				F6E6540B1B860913002D3D7A /* AppDelegate.m in Sources */,
 				F6E654081B860913002D3D7A /* main.m in Sources */,
 				F6E654111B860913002D3D7A /* ViewController.m in Sources */,
+				F63EAC4C1B8C9E34004779B8 /* RadioManage.m in Sources */,
 				F6E6540E1B860913002D3D7A /* RadioStation.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +426,7 @@
 		};
 		F6E654291B860913002D3D7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F8D99A8224B8C3467085D4 /* Pods-RadioStation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RadioStation/Info.plist;
@@ -367,6 +437,7 @@
 		};
 		F6E6542A1B860913002D3D7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D27CD3D15E2B03C64956227 /* Pods-RadioStation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RadioStation/Info.plist;
