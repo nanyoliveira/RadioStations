@@ -62,6 +62,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F665B58C1B865FF600B68E01 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		F6E653F91B860913002D3D7A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +90,7 @@
 		F6E654041B860913002D3D7A /* RadioStation */ = {
 			isa = PBXGroup;
 			children = (
+				F665B58C1B865FF600B68E01 /* model */,
 				F6E654091B860913002D3D7A /* AppDelegate.h */,
 				F6E6540A1B860913002D3D7A /* AppDelegate.m */,
 				F6E6540F1B860913002D3D7A /* ViewController.h */,
@@ -420,6 +428,7 @@
 				F6E6542A1B860913002D3D7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6E6542B1B860913002D3D7A /* Build configuration list for PBXNativeTarget "RadioStationTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +437,7 @@
 				F6E6542D1B860913002D3D7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

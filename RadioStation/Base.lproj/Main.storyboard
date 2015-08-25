@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +16,57 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSw-4N-eRa">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="609"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkA-Aq-TCn">
+                                <rect key="frame" x="274" y="305" width="53" height="19"/>
+                                <state key="normal" title="Radio 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poC-ax-sSl">
+                                <rect key="frame" x="531" y="305" width="53" height="19"/>
+                                <state key="normal" title="Radio 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56G-bM-h7A">
+                                <rect key="frame" x="24" y="305" width="53" height="19"/>
+                                <state key="normal" title="Radio 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmS-QZ-hnj">
+                                <rect key="frame" x="168" y="39" width="264" height="163"/>
+                                <color key="backgroundColor" red="0.4629122576598903" green="0.77834418465172561" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="CBq-Kn-0By"/>
+                                    <constraint firstAttribute="height" constant="163" id="ypR-bv-RrK"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qkA-Aq-TCn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="285" id="7u0-AG-VGc"/>
+                            <constraint firstItem="56G-bM-h7A" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="D4I-RZ-0MP"/>
+                            <constraint firstItem="poC-ax-sSl" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="IHR-sK-re1"/>
+                            <constraint firstAttribute="centerX" secondItem="cmS-QZ-hnj" secondAttribute="centerX" id="frT-UQ-BJB"/>
+                            <constraint firstItem="poC-ax-sSl" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="285" id="haW-Sh-C8n"/>
+                            <constraint firstItem="cmS-QZ-hnj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="19" id="j1x-W5-Qtm"/>
+                            <constraint firstAttribute="centerX" secondItem="qkA-Aq-TCn" secondAttribute="centerX" constant="-0.5" id="kvd-5V-TYt"/>
+                            <constraint firstItem="56G-bM-h7A" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="285" id="nFB-Tu-9Ld"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgFlickrImage" destination="gSw-4N-eRa" id="Ke4-kO-WmI"/>
+                        <outlet property="playButton" destination="cmS-QZ-hnj" id="w3k-mz-Ii5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

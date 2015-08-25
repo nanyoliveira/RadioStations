@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <Foundation/Foundation.h>
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *bgFlickrImage;
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
 
 @end
 
@@ -17,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+  
 }
 
 - (void)didReceiveMemoryWarning {
